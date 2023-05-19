@@ -1,0 +1,257 @@
+% Document Type
+\documentclass[a4paper,11pt]{article}
+
+% Packages
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage[table]{xcolor}
+% \usepackage{tgbonum}
+\usepackage[sfdefault]{ClearSans} %% option 'sfdefault' activates Clear Sans as the default text font
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.4in]{geometry}
+\usepackage{setspace}
+\usepackage{multirow}
+\usepackage[hidelinks]{hyperref}
+\input{glyphtounicode}
+
+% Cover Information
+\title{Ling Li Ya CV}
+\author{Ling Li Ya}
+\date{\today}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+% My Colours
+\definecolor{MyBlue}{rgb}{0.17, 0.27, 0.59}
+\definecolor{MyBGColor}{rgb}{0.90, 0.94, 0.98}
+\definecolor{MyHighlight}{rgb}{1.00, 0.89, 0.00}
+
+
+% URL
+\hypersetup{breaklinks=false,%
+% pagecolor=white,%
+colorlinks=true,%
+linkcolor=MyBlue,%
+anchorcolor=MyBlue,%
+urlcolor=MyBlue}
+\urlstyle{same}
+
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.0in}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{5pt}\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{{#1:} }{#2 \vspace{-2pt}}
+  }
+}
+
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {#2} \\
+      \textit{\small#3} & \textit{\footnotesize #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\color{MyBlue} #1} & {\footnotesize#2} \\
+      \textit{\footnotesize #3} & \textit{\footnotesize #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\footnotesize #1} & \textit{\footnotesize #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+
+\renewcommand{\labelitemii}{$\circ$}
+
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+% Own symbols
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+\newcommand{\mytextsharp}{$^\sharp$}
+
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth\footnotesize}{ll @{\extracolsep{\fill}}r}
+  \multirow{5}{*}{
+    \begin{minipage}[l][2.0cm][c]{2.25cm}
+      \includegraphics[width=2.0cm]{../profile-pic.jpg}
+    \end{minipage}}  & {\textbf{\Large Amirul Imran Bin Ahmad Azam}} & \\
+  & {\textit{Final-year software engineering student}} & {Email: \textbf{\href{mailto:amirulimran.ahmadazam@gmail.com}{amirulimran.ahmadazam@gmail.com}}} \\
+  & {50, Jalan SG 9/30, Taman Sri Gombak}, & {Mobile: \textbf{\href{tel:+6019-5116607}{+60 19-5116607}}} \\
+  & {Batu Caves, 68100,} & {GitHub: \textbf{\href{http://https://github.com/imran2part/}{https://github.com/imran2part}}}\\
+  & {Selangor, Malaysia.} & {This Document: \textbf{\href{https://github.com/imran_2part/resume/}{Coded with \LaTeX}}} \\
+\end{tabular*}
+
+
+%-----------Education-----------------
+\section{EDUCATION}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Tunku Abdul Rahman University College}{Kuala Lumpur, Malaysia}
+{Bachelor of Computer Science (Honours) in Software Engineering; CGPA:  2.7075}{Oct 2019 -- Oct 2022}
+
+\resumeSubSubheading{Diploma in MicroElectronic Engineering; CGPA: 3.0300}{Jun 2015 -- Sep 2017}
+\resumeItemListStart
+\resumeItem{Skills Acquired}{\CC, C\mytextsharp, Python, ASP.NET, SQL, HTML/CSS/Javascript}
+\resumeItem{Languages}{Proficient in written/spoken English and Malay}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Experience-----------------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Wilhelmsen Sdn Bhd}{1 Sentral, Brickfields}
+{Web developer and I.T Intern}{May 2022 -- Nov 22}
+\resumeItemListStart
+\resumeItem{Web Applications}
+{Participate in building system implementation project for Vessel inventory database web app using .NET Framework}
+\resumeItem{IT Support}
+{Support on Business-Critical Appplication onboard vessels using remote control}
+\resumeItem{Technician}
+{Setup and configure computer, servers, network device and Business Applications before sent to onboard vessels}
+\resumeItemListEnd
+
+\resumeSubheading
+{HPMM (M) SDN BHD}{Batu Kawan, Penang}
+{Engineering Technician}{May 2018 -- May 2019}
+\resumeItemListStart
+\resumeItem{Cleanroom protocol}
+{Working in 1K and 10K cleanroom environment}
+\resumeItem{MEMS process}{Working in the plating process of MEMS device production }
+\resumeItem{Troubleshooting MEMS(Micro-Electro-Mechanical-Systems) machine}
+{Troubleshoot machines and repair machine parts(robots, electronic, computer, electrical, mechanical and hydraulic system) }
+\resumeItemListEnd
+
+\resumeSubheading
+{HP-FETMEMS (Field-lectric-Transistor Micro-Electro-Mechanical-Systems)}{Kulim, Kedah}
+{Job Training}{Oct 2017 -- May 2018}
+\resumeItemListStart
+\resumeItem{Machine Technician Training}
+{Undertsand Theory and practical side of Embedde Systems, Industry 4.0, Semiconductor devices, MEMS process, cleanroom protocol and etc}
+\resumeItem{Internet-Of-Things}
+{Building an IoT device by using Arduino that can read sensor data through Wireless device }
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Projects-----------------
+\section{PROJECTS}
+\resumeSubHeadingListStart
+\resumeSubheading{Research on Predictive Maintenance for Industrial machine }{Predictive Maintenance}
+{Keras, PyTorch, Python}{Feb 2022 -- Apr 2023}
+\resumeItemListStart
+\resumeItem{Model Training}{Datasets from three different application: Aircraft engine, milling machine, hydraulic system are tarined by using LSTM technique}
+\resumeItem{Algorithm Implementation}{Data are being ingest and preprocessing before modeling and the train in LSTM Network}
+\resumeItem{Research Methodology}{Systematic Literature Review methodology to find accurate and reliable reserach papers on this domain }
+\resumeItemListEnd
+
+
+\resumeSubheading{AI- Chatbot for medical advice and suggestion}{Natural Language Processing}
+{Keras lib, PyTorch, Python, Google Colab}{Sep 2021 -- Oct 2021}
+\resumeItemListStart
+\resumeItem{Research and Implementation}{Read through 20+ journal papers and applied abstractive summarisation algorithms}
+\resumeItem{Experiment Design}{Designed an experiment, curated relevant dataset, tested algorithms and produced a comparison report that eventually received 98/100 marks}
+\resumeItemListEnd
+
+\resumeSubheading{{Vessels Inventory Database Application}}{Web Development}
+{C\mytextsharp, .NET Framework, Bootstrap CSS, HTML/CSS/Javascript}{Intern: July 2022 -- Nov 2022}
+\resumeItemListStart
+\resumeItem{Frontend Development}{Created 5+ pages using self-learned Bootstrap CSS}
+\resumeItem{Backend Development}{Added intra-page and inter-page functionalities using C\mytextsharp}
+\resumeItem{Database Design}{Designed, documented and implemented SQL Server schema}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Academia-----------------
+\section{ACADEMIA}
+ {\small
+  \begin{itemize}[leftmargin=*]{\footnotesize}
+    \item{Ling, L., Amirul Imran Ahmad Azam, Ramanathan Palaniappan, \& Tin, T.T. (2021, November 25-27) \textit{Artificial Intelligence Art: Attitudes and Perceptions Toward Human Versus Artificial Intelligence Artworks.} [Paper presentation]. ICHESMET 2021. \vspace{-2pt}}
+  \end{itemize}
+ }
+
+
+%-----------Courses-----------------
+\section{Courses}
+\resumeSubHeadingListStart
+\resumeSubItem{Main Courses}{Web Design and Development, Database Management, 
+Object Oriented Programming, Data Structure and Algorithm, Artificial Intelligence, 
+Distributed System and Parallel Computing, Computer Netwotking, System Analysis and Design, 
+Software Engineering, Software Requirement Engineering, Software Design and Architecture, 
+Software Quaity Assurance and Testing, Software Evolution and Maintenance, 
+Software Project Management}
+\resumeSubItem{Elective Course}{Web Application Development, Cloud computing, Computer Security}
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
+
+% -----Credits-----
+% Template: Sourabh Bajaj
+% License : MIT
